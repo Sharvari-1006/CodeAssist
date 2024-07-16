@@ -1,0 +1,9 @@
+```vb
+Public Class TempConverter
+    Private Sub ButtonConvert_Click(sender As Object, e As EventArgs) Handles ButtonConvert.Click
+        Dim celsius As Double = Double.Parse(TextBoxCelsius.Text)
+        Dim fahrenheit As Double = (celsius * 9 / 5) + 32
+        TextBoxFahrenheit.Text = fahrenheit.ToString()
+    End Sub
+End Class
+```
